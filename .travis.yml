@@ -6,7 +6,7 @@ cache:
   directories:
     - node_modules
 before_install:
-- docker login -u "$mariomans" -p "$mario123"
+- docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
 - npm i -D uglifyjs-webpack-plugin
 install:
 - npm install
